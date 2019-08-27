@@ -151,7 +151,10 @@
                         <div class="detailParameter" style="line-height:1.8em;">
                             商品名称：C-AF转接线<br />
                         </div>
-                        
+                        <div class="detailUrl">
+							<button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal">在线订购</button>
+						</div>
+						
                     </div>
                     
                     <div class="col-sm-12 col-md-12 pad">
@@ -229,8 +232,8 @@
                     <div class="list">
                         <ul id="firstpane">
                            <li><a class='' href='product.html'>C-AF转接线</a></li>
-                            <li><a class='' href='product.html'>c to c 100w</a></li>
-                            <li><a class='' href='product.html'>C-MiniDP公转接线</a></li>
+                            <li><a class='' href='product_cc.html'>c to c 100w</a></li>
+                            <li><a class='' href='product_cm.html'>C-MiniDP公转接线</a></li>
                         </ul>
                     </div>
                 </div>
@@ -314,6 +317,95 @@
         <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=1725410882&site=qq&menu=yes"><img class="qqimg" src="http://wpa.qq.com/pa?p=2:593036114:52" alt="QQ在线客服" />技术支持</a>
     </div>
 
+	<!-- 模态框（Modal） -->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" 
+							aria-hidden="true">×
+					</button>
+					<h4 class="modal-title" id="myModalLabel">
+						提交购买信息
+					</h4>
+				</div>
+				<div class="modal-body">
+					<form id="ff" method="post">
+                <center>
+                    <table cellpadding="3" cellspacing="5" class="reg">
+                        <tr>
+                            <td align="center" colspan="2">
+                                <br />
+                                感谢您光临我公司网站，提交后，我们会在第一时间联系您！<br />
+                                <br />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="right">
+                                姓名
+                            </td>
+                            <td align="left">
+                                <input class="easyui-validatebox" type="text" name="name" id='name' data-options="required:true" style="width:90%;" />
+                                *
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="right">
+                                电话
+                            </td>
+                            <td align="left">
+                                <input class="easyui-validatebox" type="text" name="tel" id='tel' data-options="" style="width:90%;" />
+								*
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="right">
+                                邮箱
+                            </td>
+                            <td align="left">
+                                <input class="easyui-validatebox" type="text" name="email" id='email' data-options="validType:'email'" style="width:90%;" />
+								*
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="right">
+                                数量
+                            </td>
+                            <td align="left">
+                                <input class="easyui-validatebox" type="text" name="qq" id='qq' data-options="" style="width:90%;" />
+								*
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td align="right">
+                                留言内容
+                            </td>
+                            <td align="left">
+                                <textarea name="content" style="width:90%; height:70px" id='content'></textarea>
+								*
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td colspan="2" align="center">
+                                <input id="submitbtn" class="btn" value="确定" style="width: 68px;" />&nbsp;&nbsp;&nbsp;&nbsp;
+                                <input class="btn" type="reset" value="重置" />
+                            </td>
+                        </tr>
+                    </table>
+                </center>
+                </form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" 
+							data-dismiss="modal">关闭
+					</button>
+				</div>
+			</div><!-- /.modal-content -->
+		</div><!-- /.modal-dialog -->
+	</div>
+
     <script type="text/javascript" src="js/online.js"></script>
 
     <!--电脑版 end-->
@@ -353,6 +445,26 @@
         $(document).ready(function () {
             $('.slider__wrapper').lightGallery({ selector: ".real" });
         });
+
+		$("#submitbtn").on("click",function(){
+			if ( $("#name").val() == undefined || $("#name").val() == '')
+			{
+				alert("必填项不能为空");
+				return;
+			} else if ( $("#tel").val() == undefined || $("#tel").val() == '')
+			{
+				alert("必填项不能为空");return;
+			}	else if ($("#email").val() == undefined || $("#email").val() == '')
+			{
+				alert("必填项不能为空");return;
+			}	else if ($("#content").val() == undefined || $("#content").val() == '')
+			{
+				alert("必填项不能为空");return;
+			}
+			alert("SubmitSuccess, our business staff will contact you as soon as possible, thank you for your attention！");
+			location.reload();
+		});
+
     </script>
     
     <script src="js/picturefill.min.js"></script>
