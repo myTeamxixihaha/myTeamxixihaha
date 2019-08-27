@@ -79,9 +79,13 @@
                         <li class="dropdown">
                             <a href="product.html" class="dropdown-toggle" data-toggle="dropdown">产品中心</a><a href="#" id="app_menudown" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="glyphicon glyphicon-menu-down btn-xs"></span></a>
                             <ul class="dropdown-menu" role="menu">
-                                <li><a class='' href='product.html'>C-AF转接线</a></li>
-								<li><a class='' href='product_cc.html'>c to c 100w</a></li>
-                                <li><a class='' href='product_cm.html'>C-MiniDP公转接线</a></li>
+                                <li><a class='' href='product.html'>C-AF转接线</a><span>+</span>
+                                    <ul>
+                                        <li><a class='' href='product.html'>产品子分类-C-AF转接线</a><ul></ul></li>
+                                    </ul>
+                                </li>
+                                <li><a class='' href='product.html'>C-MiniDP公转接线</a></li>
+                                <li><a class='' href='product.html'>c to c 100w原始</a></li>
                             </ul>
                         </li>
 
