@@ -1,1 +1,1 @@
-## 欢迎访问 UseBean [https://myteamxixihaha.github.io/usebean/](https://myteamxixihaha.github.io/usebean/ "网址")
+## 欢迎访问 UseBean [https://myteamxixihaha.github.io/](https://myteamxixihaha.github.io/ "网址")
