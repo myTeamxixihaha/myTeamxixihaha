@@ -1,0 +1,386 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="applicable-device" content="pc,mobile" />
+    <title>corecabe</title>
+
+
+
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/glide.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/online.css"rel="stylesheet" />
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap.js" type="text/javascript"></script>
+    <script src="js/jquery.glide.js" type="text/javascript"></script>
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js" type="text/javascript"></script>
+    <script src="js/respond.min.js" type="text/javascript"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+    <header>
+
+        <div class="topBox">
+            <div class="borderBottom">
+                <div class="container">
+                    <div class="welcomeBox">welcome corecabe</div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-8 logo"><a href="index.html"><img src="images/logo.png" alt="" /></a></div>
+
+                    <div class="col-xs-6 col-sm-3 col-md-2">
+                        <div class="address"></div>
+                    </div>
+
+                    <div class="col-xs-6 col-sm-3 col-md-2">
+                        <div class="tel" style="width:200px;">
+                            <img src="images/tel.gif" alt="" /><br />+86 18138219389
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <nav class="navbar navbar-static-top navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html"></a>
+                </div>
+                <div id="navbar" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+
+                        <li><a href="index.html">HomePage</a></li>
+
+                        <li class="dropdown">
+                            <a href="about.html" class="dropdown-toggle" data-toggle="dropdown">About us</a><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="glyphicon glyphicon-menu-down btn-xs"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a class='' href='about.html'>Company Profile</a></li>
+                                <li><a class='' href='contact.html'>Connect</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="dropdown">
+                            <a href="product.html" class="dropdown-toggle" data-toggle="dropdown">Products</a><a href="#" id="app_menudown" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="glyphicon glyphicon-menu-down btn-xs"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a class='' href='product.html'>C-AF</a></li>
+								<li><a class='' href='product_cc.html'>c to c 100w</a></li>
+                                <li><a class='' href='product_cm.html'>C-MiniDP</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="comment.html">Messages</a></li>
+
+                        <li><a href="contact.html">Connect</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <!-- Banner -->
+    <div class="banner homeBanner">
+        <div class="slider">
+            <ul class="slider__wrapper">
+                <li class="slider__item"><a target="_blank" title="1" href="" style="background-image:url(images/1.jpg)"><img src="images/banner-2.png" alt="1" /></a></li>
+                <li class="slider__item"><a target="_blank" title="2" href="" style="background-image:url(images/2.jpg)"><img src="images/banner-2.png" alt="2" /></a></li>
+				 <li class="slider__item"><a target="_blank" title="3" href="" style="background-image:url(images/3.jpg)"><img src="images/banner-2.png" alt="2" /></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        var glide = $('.slider').glide();
+    </script>
+
+    <!-- 内容 -->
+    <div class="container">
+        <div class="row">
+
+            <div class="">
+                <div class="aboutBox">
+                    <a href="about.html" class="aboutMore">MORE +</a>
+                    <div class="aboutTitle">
+                        <h1>Company Profile</h1>
+                        <span>ABOUT US</span></div>
+                    <section>
+
+                       CoreCabe with his own technical strength, integrity services, in the high-tech enterprises maintained a healthy, stable and rapid sustainable development. CoreCabe adhere to the market as the guidance, take development as the theme, science and technology as the power, to the concept of people-oriented, and constantly strengthen the economy turn management, formation of the perfect organization, reasonable structure, harmonious and orderly running flexible effective mechanism.
+
+                    </section>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <!-- 关注微信模态框（Modal）start -->
+    <div class="modal fade" id="wechatModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content" style="border: 0px;">
+                <div class="modal-header">scan qrcode</div>
+                <div class="modal-body" style="text-align: center">
+                    <img src="images/qrcode.jpg" alt="" />
+                </div>
+                <div class="modal-footer" style="text-align: center;">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        function showWechatQR() {
+            $("#wechatModal").modal("show")
+        }
+    </script>
+    <!-- 关注微信模态框（Modal）end -->
+
+    <div style="background:#f9f9f9; padding-top:30px; margin-top:30px; padding-bottom:10px">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                    <div class="productBox">
+                        <div class="titleBar">
+                            <span></span>
+                            <a href="product.html">C-AF</a>
+                            <a href="product_cc.html">c to c 100w</a>
+                            <a href="product_cm.html">C-MiniDP</a>
+							<a class="rightMore" href="product.html">>></a>
+                        </div>
+                        <div class="list">
+
+                            <div class="col-xs-6 col-sm-3 col-md-2 col-mm-6 productImg">
+                                <a title="1" href='product_detail.html'>
+                                    <span class="imgLink-hover"><span class="hover-link"></span></span>
+                                    <img src="images/products/1.jpg" alt="1" />
+                                </a>
+                                <a class="productTitle" href="product_detail.html" title="1">
+                                    1
+                                </a>
+                            </div>
+
+                            <div class="col-xs-6 col-sm-3 col-md-2 col-mm-6 productImg">
+                                <a title="2" href='product_detail.html'>
+                                    <span class="imgLink-hover"><span class="hover-link"></span></span>
+                                    <img src="images/products/2.jpg" alt="2" />
+                                </a>
+                                <a class="productTitle" href="product_detail.html" title="2">
+                                    2
+                                </a>
+                            </div>
+
+                            <div class="col-xs-6 col-sm-3 col-md-2 col-mm-6 productImg">
+                                <a title="3" href='product_detail.html'>
+                                    <span class="imgLink-hover"><span class="hover-link"></span></span>
+                                    <img src="images/products/3.jpg" alt="3" />
+                                </a>
+                                <a class="productTitle" href="product_detail.html" title="3">
+                                    3
+                                </a>
+                            </div>
+
+                            <div class="col-xs-6 col-sm-3 col-md-2 col-mm-6 productImg">
+                                <a title="4" href='product_detail.html'>
+                                    <span class="imgLink-hover"><span class="hover-link"></span></span>
+                                    <img src="images/products/4.jpg" alt="4" />
+                                </a>
+                                <a class="productTitle" href="product_detail.html" title="4">
+                                    4
+                                </a>
+                            </div>
+
+                            <div class="col-xs-6 col-sm-3 col-md-2 col-mm-6 productImg">
+                                <a title="5" href='product_detail.html'>
+                                    <span class="imgLink-hover"><span class="hover-link"></span></span>
+                                    <img src="images/products/5.jpg" alt="5" />
+                                </a>
+                                <a class="productTitle" href="product_detail.html" title="5">
+                                    5
+                                </a>
+                            </div>
+
+                            <div class="col-xs-6 col-sm-3 col-md-2 col-mm-6 productImg">
+                                <a title="6" href='product_detail.html'>
+                                    <span class="imgLink-hover"><span class="hover-link"></span></span>
+                                    <img src="images/products/6.jpg" alt="6" />
+                                </a>
+                                <a class="productTitle" href="product_detail.html" title="6">
+                                    6
+                                </a>
+                            </div>
+
+                            <div class="col-xs-6 col-sm-3 col-md-2 col-mm-6 productImg">
+                                <a title="7" href='product_detail.html'>
+                                    <span class="imgLink-hover"><span class="hover-link"></span></span>
+                                    <img src="images/products/7.jpg" alt="7" />
+                                </a>
+                                <a class="productTitle" href="product_detail.html" title="7">
+                                    7
+                                </a>
+                            </div>
+
+                            <div class="col-xs-6 col-sm-3 col-md-2 col-mm-6 productImg">
+                                <a title="8" href='product_detail.html'>
+                                    <span class="imgLink-hover"><span class="hover-link"></span></span>
+                                    <img src="images/products/8.jpg" alt="8" />
+                                </a>
+                                <a class="productTitle" href="product_detail.html" title="8">
+                                    8
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="indexNavigationGroup" id="classification">
+                    <div class="navigationBox">
+                        <div class="titleBar">
+                            <h1>Menu</h1>
+                            <span></span>
+                        </div>
+                        <div class="list">
+                            <ul id="firstpane">
+                                <li><a class='' href='product.html'>C-AF</a></li>
+                                <li><a class='' href='product_cc.html'>c to c 100w</a></li>
+                                <li><a class='' href='product_cm.html'>C-MiniDP</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+
+        <div class="copyright">
+            <p>
+                <a href="about.html">Company Profile</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                <a href="product.html">Products</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                <a href="contact.html">Connect</a>
+            </p>
+            <p class="copyright_p">© 2014-2024 LuDi All Rights Reserved</p>
+        </div>
+
+    </footer>
+
+    <script type="text/javascript" src="js/common.js"></script>
+
+    <!--客服面板-->
+    <!--电脑版-->
+    <div id="cmsFloatPanel">
+
+        <div class="ctrolPanel">
+            <a class="service" href="#"></a>
+            <a class="qrcode" href="#"></a>
+            <a class="arrow" title="Top" href="#"></a>
+        </div>
+
+        <div class="servicePanel">
+            <div class="servicePanel-inner">
+                <div class="serviceMsgPanel">
+                    <div class="serviceMsgPanel-hd"><a href="#"><span>Close</span></a></div>
+                    <div class="serviceMsgPanel-bd">
+                        <!--在线QQ-->
+                        <div class="msggroup">
+                            <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=1725410882&site=qq&menu=yes"><img class="qqimg" src="http://wpa.qq.com/pa?p=2:593036114:52" alt="QQ" />QQ</a>
+                        </div>
+
+                    </div>
+                    <div class="serviceMsgPanel-ft"></div>
+                </div>
+                <div class="arrowPanel">
+                    <div class="arrow02"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="qrcodePanel" style="margin-top: -50px;">
+            <div class="qrcodePanel-inner">
+                <div class="codePanel">
+                    <div class="codePanel-hd"><span style="float:left">Scan WeChat qrcode</span><a href="#"><span>Close</span></a></div>
+                    <div class="codePanel-bd">
+                        <img src="images/qrcode.jpg" alt="qrcode" />
+                    </div>
+                </div>
+                <div class="arrowPanel">
+                    <div class="arrow01"></div>
+                    <div class="arrow02"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="serviceBox" style="display:none">
+        <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=1725410882&site=qq&menu=yes"><img class="qqimg" src="http://wpa.qq.com/pa?p=2:593036114:52" alt="QQ" />QQ</a>
+    </div>
+
+    <script type="text/javascript" src="js/online.js"></script>
+
+    <!--电脑版 end-->
+
+    <!--手机版-->
+    <nav class="navbar-default navbar-fixed-bottom footer_nav" style="background:#fafafa;">
+        <div class="foot_nav"><a href="javascript:mShare()"><span class="glyphicon glyphicon-share btn-lg" aria-hidden="true"></span>Share</a></div>
+        <div class="foot_nav"><a href=""><span class="glyphicon glyphicon-phone btn-lg" aria-hidden="true"></span>Phone</a></div>
+        <div class="foot_nav" id="serviceBtn"><a onClick="showService()"><span class="glyphicon glyphicon glyphicon-headphones btn-lg" aria-hidden="true"></span>QQ</a></div>
+        <div class="foot_nav"><a id="gototop" href="#"><span class="glyphicon glyphicon-circle-arrow-up btn-lg" aria-hidden="true"></span>Top</a></div>
+        <div id="mShareBox" style="position: fixed; display: none; z-index: 999; bottom: 47px; width: 100%; height: 45px; background: #fff; border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; padding: 5px;">
+            <!-- JiaThis Button BEGIN -->
+            <div class="jiathis_style_m"></div>
+            <script type="text/javascript" src="http://v3.jiathis.com/code/jiathis_m.js" charset="utf-8"></script>
+            <!-- JiaThis Button END -->
+        </div>
+    </nav>
+    <!--手机版 end-->
+
+    <script type="text/javascript">
+        function mShare() {
+            $("#mShareBox").toggle();
+            $("#serviceBox").hide();
+        }
+
+        if ($(".banner .slider__wrapper li").length == 0) {
+            $(".banner").addClass("emptyBanner");
+        }
+
+        function showService() {
+            $("#mShareBox").hide();
+            $("#serviceBox").toggle();
+        }
+    </script>
+
+</body>
+</html>
